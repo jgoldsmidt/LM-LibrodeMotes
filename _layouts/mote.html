@@ -63,34 +63,46 @@
         }
       };
       c.addBehaviors(behaviors);
-      c.getHTML5('../tei/{{page.title}}.xml', function(data){
-        document.getElementById("TEI").appendChild(data);
+      c.getHTML5('../tei/{{page.title}}D.xml', function(data){
+        document.getElementById("moteDama").appendChild(data);
+      });
+      c.getHTML5('../tei/{{page.title}}C.xml', function(data){
+        document.getElementById("moteCaballero").appendChild(data);
       });
     </script>
   </head>
 <body>
   {% include nav.html %}
   <main>
-    <div class="mote">
-      <article class="post-content fullwidth" style="padding-top: 10; margin-bottom: 20;" >
-        
-        <div class="post.two-columns" style="display: flex; padding: 0;">
-        <div class="post-content" >
-        <img src="../facsimiles/{{page.title}}D.png" alt="{{page.title}} Dama"></img>
-        <audio controls style="padding-left:200;">
-            <source src="../assets/audio/{{page.title}}D.mp3" type="audio/mpeg">
-        </audio>
-        </div>
-        <div class="post-content">
-            <img src="../facsimiles/{{page.title}}C.png" alt="{{page.title}} Caballero"></img>
-        <audio controls style="float: right;">
-            <source src="../assets/audio/{{page.title}}C.mp3" type="audio/mpeg">
-        </audio>
+    <div class="digital-edition">
+      <article class="par-de-motes flex">
+        <div style="display: flex;">
+          <div> atrás</div>
+          <div class="mote-dama card">
+            <img class="card-img-top" src="../facsimiles/{{page.title}}D.png" alt="{{page.title}} Dama"></img>
+            <div class="card-body">
+            <audio controls style="padding-left:200;">
+              <source src="../assets/audio/{{page.title}}D.mp3" type="audio/mpeg">
+            </audio>
+            <br>
+            <div id="moteDama" class="card-text">
+            </div>
+          </div>
+          </div>
+          <div class="mote-caballero card">
+            <img class="card-img-top" src="../facsimiles/{{page.title}}C.png" alt="{{page.title}} Caballero"></img>
+            <div class="card-body">
+            <audio controls>
+              <source src="../assets/audio/{{page.title}}C.mp3" type="audio/mpeg">
+            </audio>
+            <br>
+            <div id="moteCaballero" class="card-text">
+            </div>
+          </div>
+          </div>
+          <div> adelante</div>  
         </div>  
-    </div>  
-    <div id="TEI">
-    </div>
-        </article>
+      </article>
     </div>
   </main>
   {% include footer.html %}
