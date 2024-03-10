@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Title</title>
-    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    <link rel="stylesheet" href="/assets/css/tei.css">
-    <script src="/assets/js/CETEI.js"></script>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/tei.css">
+    <script src="assets/js/CETEI.js"></script>
     <script>
       let c = new CETEI();
       let behaviors = {
@@ -63,7 +63,7 @@
         }
       };
       c.addBehaviors(behaviors);
-      c.getHTML5('/tei/{{page.title}}.xml', function(data){
+      c.getHTML5('tei/{{page.title}}.xml', function(data){
         document.getElementById("TEI").appendChild(data);
       });
     </script>
@@ -95,7 +95,7 @@
   </main>
   {% include footer.html %}
   {% include scripts.html %}
-  <script src="/assets/js/CETEI.js"></script>
+  <script src="assets/js/CETEI.js"></script>
 </body>
 </html>
 
