@@ -1,0 +1,82 @@
+---
+
+menu: false
+title: C5
+letter: B
+description: Mote C5
+permalink: /test/
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/assets/css/tei.css">
+  <script src="/assets/js/CETEI.js"></script>
+  <script>
+    let c = new CETEI();
+    let behaviors = {
+      "tei": {
+        "head": function(e) {
+          let level = document.evaluate("count(ancestor::tei-div)", e, null, XPathResult.NUMBER_TYPE, null);
+          let result = document.createElement("h" + (level.numberValue < 7 ? level.numberValue : 6));
+          for (let n of Array.from(e.childNodes)) {
+            result.appendChild(n.cloneNode());
+          }
+          return result;
+        },
+        // Turn notes into endnotes
+        "note": function(e){
+          if (!this.noteIndex){
+            this["noteIndex"] = 1;
+          } else {
+            this.noteIndex++;
+          }
+          let id = "note" + this.noteIndex;
+          let link = document.createElement("a");
+          link.setAttribute("id", "src" + id);
+          link.setAttribute("href", "#" + id);
+          link.innerHTML = this.noteIndex;
+          let content = document.createElement("sup");
+          if (e.previousSibling.localName == "tei-note") {
+            content.appendChild(document.createTextNode(","));
+          }
+          content.appendChild(link);
+          let notes = this.dom.querySelector("ol.notes");
+          if (!notes) {
+            notes = document.createElement("ol");
+            notes.setAttribute("class", "notes");
+            this.dom.appendChild(notes);
+          }
+          let note = document.createElement("li");
+          note.id = id;
+          note.innerHTML = "<a href=\"#src" + id + "\">^</a> " + e.innerHTML
+          notes.appendChild(note);
+          return content;
+        },
+        "placeName": [
+          ["[ref]", ["<a href=\"$rw@ref\" target=\"_blank\">","</a>"]]
+        ],
+        "persName": [
+          ["[ref]", ["<a href=\"$rw@ref\" target=\"_blank\">","</a>"]]
+        ],
+        "rs": [
+          ["[ref]", ["<a href=\"$rw@ref\" target=\"_blank\">","</a>"]]
+        ]
+      }
+    };
+    c.addBehaviors(behaviors);
+    c.getHTML5('/tei/{{page.title}}.xml', function(data){
+      document.getElementById("TEI").appendChild(data);
+    });
+  </script>
+</head>
+<body>
+
+<p>hola probando</p>
+<div id="TEI"></div>
+<p>vamosss</p>
+</body>
+</html>
