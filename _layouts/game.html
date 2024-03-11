@@ -9,8 +9,9 @@
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/styles.css">
     <link rel="stylesheet" href="../assets/css/tei.css">
+    <link rel="stylesheet" href="../assets/css/game.css">
     <script src="../assets/js/CETEI.js"></script>
-    <script>
+    <!--<script>
       let c = new CETEI();
       let behaviors = {
         "tei": {
@@ -69,60 +70,42 @@
       c.getHTML5('../tei/{{page.title}}C.xml', function(data){
         document.getElementById("moteCaballero").appendChild(data);
       });
-    </script>
+    </script>-->
   </head>
 <body>
   {% include nav.html %}
+
   <main>
-    <div class="digital-edition">
-      <ul class="nav nav-tabs justify-content-center">
-        <li class="nav-item">
-          <a class="nav-link" href="{{ page.previous.url }}">Anterior</a>
-        </li>
-  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Secciones</a>
-    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-      <li>
-        <a class="dropdown-item" href="#">Prólogo</a>
-      </li>
-      <li>
-        <hr class="dropdown-divider">
-      </li>
-      <li>
-        <a class="dropdown-item" href="#">A</a>
-      </li>
-    </ul>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="/{{page.letter}}{{page.number +1}}/">Siguiente</a>
-  </li>
-</ul>
-      <article class="par-de-motes flex">
-        <div style="display: flex; justify-content: center;">
-          <div class="mote-dama card">
-            <img class="card-img-top" src="../facsimiles/{{page.title}}D.png" alt="{{page.title}} Dama"></img>
-            <div class="card-body">
-            <audio controls style="padding-left:200;">
-              <source src="../assets/audio/{{page.title}}D.mp3" type="audio/mpeg">
-            </audio>
-            <br>
-            <div id="moteDama" class="card-text">
+    <div class="container-fluid">
+        <div class="bg">
+          <div class="scene">
+            <div class="card">
+              <div class="card__face card__face--front">
+                <img src="/assets/img/naipe.png" />
+              </div>
+              <div class="card__face card__face--back">
+                <img src="/assets/img/naipe.png" />
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__face card__face--front">
+                <img src="h/assets/img/naipe.png" />
+              </div>
+              <div class="card__face card__face--back">
+                <img src="h/assets/img/naipe.png"" />
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__face card__face--front">
+                <img src="h/assets/img/naipe.png" />
+              </div>
+              <div class="card__face card__face--back">
+                <img src="https://i.loli.net/2019/11/03/RtVq2wxQYySDb8L.jpg" />
+              </div>
             </div>
           </div>
-          </div>
-          <div class="mote-caballero card">
-            <img class="card-img-top" src="../facsimiles/{{page.title}}C.png" alt="{{page.title}} Caballero"></img>
-            <div class="card-body">
-            <audio controls>
-              <source src="../assets/audio/{{page.title}}C.mp3" type="audio/mpeg">
-            </audio>
-            <br>
-            <div id="moteCaballero" class="card-text">
-            </div>
-          </div>
-          </div>
-        </div>  
-      </article>
+        </div>
+
     </div>
   </main>
   {% include footer.html %}
@@ -130,21 +113,3 @@
   <script src="../assets/js/CETEI.js"></script>
 </body>
 </html>
-
-
-
-
-<!--<div class="container">
-    <main>{{content}}</main>
-    <aside>
-        <h3>Recent Posts</h3>
-        {% for post in site.posts %}
-        <li><a href="{{ post.url }}">{{ post.title }}</a> </li>
-        {% endfor %}
-    </aside>
-
-    
-</div> -->
-
-
-

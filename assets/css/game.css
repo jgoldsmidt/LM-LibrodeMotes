@@ -1,0 +1,52 @@
+.bg {
+    margin:0 auto;
+    background-image: url("../img/salon_de_baile.jpg");
+    background-position: 50%;
+    background-size: cover;
+    display: table;
+    min-height:100vh;
+    width: 100%;
+
+}
+
+.scene {
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    perspective: 800px;
+  
+    .card {
+      position: relative;
+      width: 240px;
+      height: 300px;
+      color: white;
+      cursor: pointer;
+      transition: 1s ease-in-out;
+      transform-style: preserve-3d;
+      border-radius: 9%;
+  
+      &:hover {
+        transform: rotateY(0.5turn);
+      }
+  
+      .card__face {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        transition: 1s ease-in-out;  
+        border-radius: 9%;
+        img {
+          width: 240px;
+          height: 300px;
+          object-fit: cover;
+        }
+  
+        &--back {
+          transform: rotateY(0.5turn);
+        }
+      }
+    }
+  }
