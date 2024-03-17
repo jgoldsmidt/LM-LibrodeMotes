@@ -75,9 +75,9 @@
   {% include nav.html %}
   <main>
     <div class="digital-edition">
-      <ul class="nav nav-tabs justify-content-center">
+      <ul class="nav nav-tabs justify-content-center text-secundary">
         <li class="nav-item">
-          <a class="nav-link" href="{{ page.previous.url }}">Anterior</a>
+          <a class="nav-link" href="../{{page.prev}}/">Anterior</a>
         </li>
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Secciones</a>
@@ -91,10 +91,16 @@
       <li>
         <a class="dropdown-item" href="#">A</a>
       </li>
+      <li>
+        <a class="dropdown-item" href="#">A</a>
+      </li>
+      <li>
+        <a class="dropdown-item" href="#">A</a>
+      </li>
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="/{{page.letter}}{{page.number +1}}/">Siguiente</a>
+    <a class="nav-link" href="../{{page.next}}/">Siguiente</a>
   </li>
 </ul>
       <article class="par-de-motes flex">
@@ -134,17 +140,7 @@
 
 
 
-<!--<div class="container">
-    <main>{{content}}</main>
-    <aside>
-        <h3>Recent Posts</h3>
-        {% for post in site.posts %}
-        <li><a href="{{ post.url }}">{{ post.title }}</a> </li>
-        {% endfor %}
-    </aside>
 
-    
-</div> -->
 
 
 

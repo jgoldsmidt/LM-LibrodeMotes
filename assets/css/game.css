@@ -1,6 +1,6 @@
 .bg {
     margin:0 auto;
-    background-image: url("../img/salon_de_baile.jpg");
+    background-image: url("../img/bg-game.jpeg");
     background-position: 50%;
     background-size: cover;
     display: table;
@@ -10,22 +10,21 @@
 }
 
 .scene {
-    width: 1000px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     perspective: 800px;
-  
+}
     .card {
       position: relative;
-      width: 240px;
-      height: 300px;
-      color: white;
+      width: 190px;
+      height: 270px;
+      color: rgb(65, 63, 63);
       cursor: pointer;
       transition: 1s ease-in-out;
       transform-style: preserve-3d;
-      border-radius: 6%;
+      border-radius: 4%;
       box-shadow: inset;
-      box-shadow: 5px 5px 2px;;
+      box-shadow: 1px 1px 2px;;
   
       &:hover {
         transform: rotateY(0.5turn);
@@ -41,10 +40,10 @@
         transition: 1s ease-in-out;  
         border-radius: 6%;
         box-shadow: inset;
-        box-shadow: 5px 5px 2px;;
+        box-shadow: 1px 1px 2px;;
         img {
-          width: 240px;
-          height: 300px;
+          width: 190px;
+          height: 270px;
           object-fit:scale-down;
         }
   
@@ -53,4 +52,3 @@
         }
       }
     }
-  }

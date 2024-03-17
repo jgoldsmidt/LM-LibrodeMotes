@@ -5,7 +5,14 @@
   {% include nav.html %}
   <main>
     {{ content }}
+    
   </main>
+      <aside>
+        <h3>Recent Pages</h3>
+        {% for page in site.page %}
+        <li><a href="{{ page.url }}">{{ page.title }}</a> </li>
+        {% endfor %}
+    </aside>
   {% include scripts.html %}
   {% include footer.html %}
 </body>
