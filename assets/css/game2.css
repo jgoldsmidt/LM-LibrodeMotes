@@ -5,16 +5,21 @@
 
 main {
     background-image: url("../img/bg-game.jpeg");
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
     min-height: 100vh;
     background-position: 50%;
     background-size: cover;
 }
 
+.card-body {
+    background-color:rgb(192, 187, 162);
+    color: #3d3c3c;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px #000;
+}
 
+.card-body p {
+    font-style: italic;
+}
 .card {
     position: relative;
     width: 190px;
@@ -59,21 +64,22 @@ main {
 
 .card .back {
     transform: perspective(600px) rotateY(180deg);
-    background: rgb(192, 187, 162);
+    background-image: url("../img/hoja-antigua.jpeg");
+    background-size: cover;
     padding: 15px;
     color: #3d3c3c;
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     text-align: center;
     box-shadow: 0 5px 10px #000;
+    cursor: pointer;
 }
 
 .card .back .link {
     border-top: solid 1px #f3f3f3;
 }
 
-.card .back .link a {
+.card .back .link  {
     color: #f3f3f3;
 }
 
@@ -96,4 +102,30 @@ main {
 
 .card:hover .back {
     transform: perspective(600px) rotateY(360deg);
+}
+
+#siguienteMotegame {
+    background-color: darkgrey;
+    color: #000;
+    font-weight:500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+
+}
+
+.cara-dama.enojada {
+    background-image: url("../img/dama-triste.png");
+}
+
+.cara-dama.feliz {
+    background: url("../img/dama-feliz.png");   
+}
+
+.panel-game{
+    min-height: 80vh;
 }

@@ -73,60 +73,61 @@
     </script>-->
   </head>
 <body>
-  {% include nav.html %}
-
   <main>
+    <div class="panel-game row d-flex align-items-center justify-content-around">    
+      <div>
+        Juego titulooo
+      </div>
+      <div class="col-7 d-flex">
     <div class="card">
       <div class="face front">
           <img src="../assets/img/naipe.png" alt="">
       </div>
-      
-      <a href="../B1/">
 
-        <div class="face back">
-          <div>
+        <div id="respuesta1" class="face back">
           <p>Yo bien andaré pidiendo
             lo que mucho ha menester
             este pobre de plazer</p>
           </div>
-          </div>
-        </a>
-      </div>
-  </div>
-
-  <div class="card">
+    </div>
+    <div class="card">
       <div class="face front">
           <img src="../assets/img/naipe.png" alt="">
       </div>
-      <div class="face back">
+      <div id="respuesta2" class="face back">
           <p>No parescería loco
             en bailar sin son por vos
             si bailásemos los dos.
-            </p>
-          <div class="link">
-              <a href="#">ELEGIR</a>
-          </div>
+          </p>
       </div>
-  </div>
-
-  <div class="card">
+    </div>
+    <div class="card">
       <div class="face front">
           <img src="../assets/img/naipe.png" alt="">
       </div>
-      <div class="face back">
+      <div id="respuesta3" class="face back">
           <p>Secáronse por mi mal 
             lágrimas de mis entrañas
             y han quedado en las pestañas
             secas por una señal
             </p>
-          <div class="link">
-              <a href="#">ELEGIR</a>
-          </div>
       </div>
-  </div>
+    </div>
+    </div>
+    <div class="dama-game col-5">
+      <div class="card" style="width: 19rem;">
+        <img class="cara-dama" id="caraDama" src="../assets/img/OIG3 (2).png" alt="" style="height: 300px;">
+        <div class="card-body">
+          <p id="moteDamagame" class="card-text">Secáronse por mi mal lágrimas de mis entrañas y han quedado en las pestañas 
+            secas por una señal</p>
+        </div>
+      </div>
+    </div>
+    </div>
+    <button id="siguienteMotegame">SIGUIENTE</button>
   </main>
-  {% include footer.html %}
   {% include scripts.html %}
   <script src="../assets/js/CETEI.js"></script>
+  <script src="../assets/js/game.js"></script>
 </body>
 </html>
