@@ -8,10 +8,9 @@
     <title>Title</title>
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/styles.css">
-    <link rel="stylesheet" href="../assets/css/tei.css">
-    <link rel="stylesheet" href="../assets/css/game.css">
+    <link rel="stylesheet" href="../assets/css/game2.css">
     <script src="../assets/js/CETEI.js"></script>
-    <!--<script>
+    <script>
       let c = new CETEI();
       let behaviors = {
         "tei": {
@@ -64,52 +63,89 @@
         }
       };
       c.addBehaviors(behaviors);
-      c.getHTML5('../tei/{{page.title}}D.xml', function(data){
-        document.getElementById("moteDama").appendChild(data);
+      c.getHTML5('../tei/{{page.question}}D.xml', function(data){
+        document.getElementById("moteDamagame").appendChild(data);
       });
-      c.getHTML5('../tei/{{page.title}}C.xml', function(data){
-        document.getElementById("moteCaballero").appendChild(data);
+      c.getHTML5('../tei/{{page.answer1}}C.xml', function(data){
+        document.getElementById("answer1").appendChild(data);
       });
-    </script>-->
+      c.getHTML5('../tei/{{page.answer2}}C.xml', function(data){
+        document.getElementById("answer2").appendChild(data);
+      });
+      c.getHTML5('../tei/{{page.answer3}}C.xml', function(data){
+        document.getElementById("answer3").appendChild(data);
+      });
+    </script>
   </head>
 <body>
-  {% include nav.html %}
-
   <main>
-    <div class="container-fluid">
-        <div class="bg">
-          <div class="scene" style="
-          padding-top: 300px;">
-            <div class="card">
-              <div class="card__face card__face--front">
-              </div>
-              <div class="card__face card__face--back">
-                <img src="../assets/img/naipe.png" />
-              </div>
-            </div>
-            <div class="card">
-              <div class="card__face card__face--front">
-                <img src="../assets/img/naipe.png" />
-              </div>
-              <div class="card__face card__face--back">
-                <p>probando2</p>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card__face card__face--front">
-                <img src="../assets/img/naipe.png" />
-              </div>
-              <div class="card__face card__face--back">
-                <img src="../assets/img/naipe.png">
-              </div>
-            </div>
-          </div>
-        </div>
+    <div class="panel-game row d-flex align-items-center justify-content-around">    
+      <div>
+      </div>
+      <div class="col-7 d-flex">
+    <div class="card">
+      <div class="face front">
+          <img src="../assets/img/naipe.png" alt="">
+      </div>
 
+        <div id="{{page.answer1value}}" class="face back">
+          <p id="answer1"></p>
+          </div>
+    </div>
+    <div class="card">
+      <div class="face front">
+          <img src="../assets/img/naipe.png" alt="">
+      </div>
+      <div id="{{page.answer2value}}" class="face back">
+          <p id="answer2">
+          </p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="face front">
+          <img src="../assets/img/naipe.png" alt="">
+      </div>
+      <div id="{{page.answer3value}}" class="face back">
+          <p id="answer3">
+            </p>
+      </div>
+    </div>
+    </div>
+    <div class="dama-game col-5">
+      <div class="card" style="width: 19rem;">
+        <img class="cara-dama" id="caraDama" src="../assets/img/OIG3 (2).png" alt="" style="height: 300px;">
+        <div class="card-body">
+          <p id="moteDamagame" class="card-text"></p>
+        </div>
+      </div>
+    </div>
     </div>
   </main>
-  {% include footer.html %}
   {% include scripts.html %}
   <script src="../assets/js/CETEI.js"></script>
+  <script> 
+    
+    var rFalse1 = document.getElementById ('rFalse1'),
+    caradama = document.getElementById ('caraDama');
+
+
+function respondeMal ()
+{  document.getElementById("caraDama").src="../assets/img/dama-triste.png";
+}
+    rFalse1.addEventListener('click',respondeMal,true);
+
+var rTrue = document.getElementById ('rTrue'),
+    caradama = document.getElementById ('caraDama');
+
+    function respondeBien ()
+{  document.getElementById("caraDama").src="../assets/img/dama-feliz.png";
+}
+    rTrue.addEventListener('click',respondeBien,true);
+
+    var rFalse2 = document.getElementById ('rFalse2'),
+    caradama = document.getElementById ('caraDama');
+
+    rFalse2.addEventListener('click',respondeMal,true);
+  </script>
 </body>
 </html>
