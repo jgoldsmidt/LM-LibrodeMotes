@@ -75,7 +75,7 @@
   {% include nav.html %}
   <main>
     <div class="digital-edition">
-      <ul class="nav nav-tabs justify-content-center text-secundary">
+<!--      <ul class="nav nav-tabs justify-content-center text-secundary">
         <li class="nav-item">
           <a class="nav-link" href="../{{page.prev}}/">Anterior</a>
         </li>
@@ -102,13 +102,16 @@
   <li class="nav-item">
     <a class="nav-link" href="../{{page.next}}/">Siguiente</a>
   </li>
-</ul>
+</ul>-->
       <div class="par-de-motes container flex">
         <div style="display: flex; justify-content: center;">
+          <div class="arrow col-1">
+            <p><</p>
+          </div>
           <div class="mote-dama card">
             <img class="card-img-top" src="../facsimiles/{{page.title}}D.png" alt="{{page.title}} Dama"></img>
             <div class="card-body row">
-            <div id="moteDama" class="card-text col-6">
+            <div id="moteDama" class="card-text col-5">
             </div>
             <div class="col-6">
             <audio controls style="padding-left:200;">
@@ -121,7 +124,7 @@
           <div class="mote-caballero card">
             <img class="card-img-top" src="../facsimiles/{{page.title}}C.png" alt="{{page.title}} Caballero"></img>
             <div class="card-body row">
-            <div id="moteCaballero" class="card-text col-6">
+            <div id="moteCaballero" class="card-text col-5">
             </div>
             <div class="col-6">
               <audio controls>
@@ -129,6 +132,9 @@
               </audio>
             </div>
           </div>
+          </div>
+          <div class="arrow col-1">
+            <p>></p>
           </div>
         </div>  
       </div>
