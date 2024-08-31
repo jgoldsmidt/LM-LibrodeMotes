@@ -14,4 +14,4 @@ VISOR:
     -audio: solo boton con logo simple ( play o audio)
     -intercambiar fasc y texto (arriba o abajo)
     -botón de pdf y xml
-    -flechas de navegación
+    -flechas de navegación+12qa
