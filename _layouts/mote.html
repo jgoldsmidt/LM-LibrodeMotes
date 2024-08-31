@@ -70,6 +70,19 @@
         document.getElementById("moteCaballero").appendChild(data);
       });
     </script>
+    <style>
+      /* Estilos minimalistas para el botón */
+      .audio-button {
+          background-color: transparent;
+          border: none;
+          font-size: 24px;
+          cursor: pointer;
+      }
+
+      .audio-button:focus {
+          outline: none;
+      }
+  </style>
   </head>
 <body>
   {% include nav.html %}
@@ -109,13 +122,10 @@
           <div class="mote-dama card">
             <h5 class="card-title">Dama</h5>
             <div class="card-buttons row">            
-            <a href="/LM-LibrodeMotes/tei/{{page.title}}D.xml" class="btn btn-danger-emphasis" target="_blank">TEI</a>
-            <a href="/LM-LibrodeMotes/facsimiles/{{page.title}}D.png" class="btn btn-danger-emphasis" target="_blank">IMG</a>
-            <div class="audio-mote">
-              <audio controls>
-                <source src="../assets/audio/{{page.title}}C.mp3" type="audio/mpeg">
-              </audio>
-            </div>
+            <a href="/LM-LibrodeMotes/tei/{{page.title}}D.xml" class="btn btn-danger" target="_blank">TEI</a>
+            <a href="/LM-LibrodeMotes/facsimiles/{{page.title}}D.png" class="btn btn-danger" target="_blank">IMG</a>
+            <button id="audioButton" class="audio-button">🔊</button>
+            <audio id="audio" src="../assets/audio/{{page.title}}D.mp3" type="audio/mpeg"></audio>
           </div> 
             <img class="card-img-top" src="../facsimiles/{{page.title}}D.png" alt="{{page.title}} Dama"></img>
             <div class="card-body">
@@ -127,13 +137,10 @@
           <div class="mote-caballero card">
             <h5 class="card-title">Caballero</h5>
             <div class="card-buttons row">
-            <a href="/LM-LibrodeMotes/tei/{{page.title}}C.xml" class="btn btn-danger-emphasis" target="_blank">TEI</a>
-            <a href="/LM-LibrodeMotes/facsimiles/{{page.title}}C.png" class="btn btn-danger-emphasis" target="_blank">IMG</a>
-            <div class="audio-mote">
-              <audio controls>
-              <source src="../assets/audio/{{page.title}}C.mp3" type="audio/mpeg">
-              </audio>
-            </div>
+            <a href="/LM-LibrodeMotes/tei/{{page.title}}C.xml" class="btn btn-danger" target="_blank">TEI</a>
+            <a href="/LM-LibrodeMotes/facsimiles/{{page.title}}C.png" class="btn btn-danger" target="_blank">IMG</a>
+            <button id="audioButton" class="audio-button">🔊</button>
+            <audio id="audio" src="../assets/audio/{{page.title}}C.mp3" type="audio/mpeg"></audio>
           </div>
             <img class="card-img-top" src="../facsimiles/{{page.title}}C.png" alt="{{page.title}} Caballero"></img>
             <div class="card-body">
@@ -151,6 +158,22 @@
   </main>
   {% include footer.html %}
   {% include scripts.html %}
+  <script>
+    // Referencias al botón y al audio
+    const audioButton = document.getElementById("audioButton");
+    const audio = document.getElementById("audio");
+
+    // Evento de clic para reproducir o pausar el audio
+    audioButton.addEventListener("click", function() {
+        if (audio.paused) {
+            audio.play();
+            audioButton.textContent = "⏸️"; // Cambia el icono a pausa
+        } else {
+            audio.pause();
+            audioButton.textContent = "🔊"; // Cambia el icono a parlante
+        }
+    });
+</script>
   <script src="../assets/js/CETEI.js"></script>
 </body>
 </html>
