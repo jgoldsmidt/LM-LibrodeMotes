@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+<fileDesc>
+			<titleStmt>
+ 				<title> Libro de motes de damas y cavalleros. Intitulado El juego de mandar
+compuesto por don Luis Milán. Dirigido a las damas</title>
+				<author>Luis de Milán</author>
+                <editor>Gimena del Rio Riande</editor>
+				<respStmt>
+					<name>Julieta Goldsmidt</name>
+					<resp>encoding</resp>
+                  
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>HD LAB (CONICET)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl>
+                <title> Libro de motes de damas y cavalleros. Intitulado El juego de mandar
+compuesto por don Luis Milán.Dirigido a las damas</title></bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>PRÓLOGO </title>
+			</head>
+			<div>
+		<p>Señoras damas. Resplandeciente virtud. Estrellas relumbrantes. Gloria de los cavalleros. Espejo de gala. Celestial hermosura. Exemplo de criança. Graciosa conversación. Leyes y mando en la tierra para dar vida y muerte y fama de inmortal memoria. Quién será tan ignorante que no conozca todo lo sobredicho </p>
+			</div>
+		</body>
+	</text>
+</TEI>
