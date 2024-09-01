@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/tei.css">
+    <script src="../assets/js/CETEI.js"></script>
+    <script>
+      let c = new CETEI();
+      let behaviors = {
+        "tei": {
+          "head": function(e) {
+            let level = document.evaluate("count(ancestor::tei-div)", e, null, XPathResult.NUMBER_TYPE, null);
+            let result = document.createElement("h" + (level.numberValue < 7 ? level.numberValue : 6));
+            for (let n of Array.from(e.childNodes)) {
+              result.appendChild(n.cloneNode());
+            }
+            return result;
+          },
+          // Turn notes into endnotes
+          "note": function(e){
+            if (!this.noteIndex){
+              this["noteIndex"] = 1;
+            } else {
+              this.noteIndex++;
+            }
+            let id = "note" + this.noteIndex;
+            let link = document.createElement("a");
+            link.setAttribute("id", "src" + id);
+            link.setAttribute("href", "#" + id);
+            link.innerHTML = this.noteIndex;
+            let content = document.createElement("sup");
+            if (e.previousSibling.localName == "tei-note") {
+              content.appendChild(document.createTextNode(","));
+            }
+            content.appendChild(link);
+            let notes = this.dom.querySelector("ol.notes");
+            if (!notes) {
+              notes = document.createElement("ol");
+              notes.setAttribute("class", "notes");
+              this.dom.appendChild(notes);
+            }
+            let note = document.createElement("li");
+            note.id = id;
+            note.innerHTML = "<a href=\"#src" + id + "\">^</a> " + e.innerHTML
+            notes.appendChild(note);
+            return content;
+          },
+          "placeName": [
+            ["[ref]", ["<a href=\"$rw@ref\" target=\"_blank\">","</a>"]]
+          ],
+          "persName": [
+            ["[ref]", ["<a href=\"$rw@ref\" target=\"_blank\">","</a>"]]
+          ],
+          "rs": [
+            ["[ref]", ["<a href=\"$rw@ref\" target=\"_blank\">","</a>"]]
+          ]
+        }
+      };
+      c.addBehaviors(behaviors);
+      c.getHTML5('../tei/{{page.title}}.xml', function(data){
+        document.getElementById("prologo").appendChild(data);
+      });
+
+    </script>
+    <style>
+      /* Estilos minimalistas para el botón */
+      .audio-button {
+          background-color: transparent;
+          border: none;
+          font-size: 18px;
+          cursor: pointer;
+      }
+
+      .audio-button:focus {
+          outline: none;
+      }
+  </style>
+  </head>
+<body>
+  {% include nav.html %}
+  <main>
+    <div class="digital-edition">
+      <div class="par-de-motes container-fluid flex p-0 bg-dark">
+        <div style="display: flex; justify-content: center;">
+          <div class="arrow align-self-center">
+            <a class="nav-link p-1" href="../{{page.prev}}/"><img src="/LM-LibrodeMotes/assets/img/arrow_back_black.png" style="width: 1vw;" alt="<"></a>
+          </div>
+          <div class="prologo-img card">
+            <img class="card-img-top" src="/LM-LibrodeMotes/facsimiles/{{page.title}}.jpg" alt="{{page.title}}"></img>           
+          </div>
+          <div class="prologo-txt card">
+            <div class="card-body pt-0">
+            <div class="card-title">{{page.title-tei}}</div>
+            <div id="prologo" class="card-text">
+            </div>
+          </div>
+          </div>
+          <div class="arrow align-self-center">
+            <a class="nav-link p-1" href="../{{page.next}}/"><img src="/LM-LibrodeMotes/assets/img/arrow_forward_black.png" style="width: 1vw;" alt=">"></a>
+          </div>
+        </div>  
+      </div>
+    </div>
+  </main>
+  {% include footer.html %}
+  {% include scripts.html %}
+  <script src="../assets/js/CETEI.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
