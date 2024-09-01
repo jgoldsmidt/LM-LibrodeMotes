@@ -8,6 +8,5 @@ tei-p {
 }
 tei-l {
   display: block;
-  margin-top: .5em;
-  margin-bottom: .5em;
+  text-align: center;
 }
