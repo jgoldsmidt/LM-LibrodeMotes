@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+<fileDesc>
+			<titleStmt>
+ 				<title> Libro de motes de damas y cavalleros. Intitulado El juego de mandar
+compuesto por don Luis Milán. Dirigido a las damas</title>
+				<author>Luis de Milán</author>
+                <editor>Gimena del Rio Riande</editor>
+				<respStmt>
+					<name>Julieta Goldsmidt</name>
+					<resp>encoding</resp>
+                  
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>HD LAB (CONICET)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl>
+                <title> Libro de motes de damas y cavalleros. Intitulado El juego de mandar
+compuesto por don Luis Milán.Dirigido a las damas</title></bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>Avi </title>
+			</head>
+			<div>
+		<p>ça, pues la mayor cortesía de los cavalleros no es tanto como la menor cortesía de las damas. Porque en ellas no ay menor ni poco, sino mayor y mucho, pues el gran merecimiento dellas todo lo meresce. También con mucha razón os podemos dezir graciosa conversación, pues sois la misma gracia, y en tanta manera que si un cavallero habla una razón sabia y una dama dize una otra razón avisada, en más y por más gracio </p>
+			</div>
+		</body>
+	</text>
+</TEI>

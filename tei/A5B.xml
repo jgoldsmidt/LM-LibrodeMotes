@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+<fileDesc>
+			<titleStmt>
+ 				<title> Libro de motes de damas y cavalleros. Intitulado El juego de mandar
+compuesto por don Luis Milán. Dirigido a las damas</title>
+				<author>Luis de Milán</author>
+                <editor>Gimena del Rio Riande</editor>
+				<respStmt>
+					<name>Julieta Goldsmidt</name>
+					<resp>encoding</resp>
+                  
+				</respStmt>
+ 			</titleStmt>
+ 			<publicationStmt>
+ 				<publisher>HD LAB (CONICET)</publisher>
+ 			</publicationStmt>
+ 			<sourceDesc>
+				<bibl>
+                <title> Libro de motes de damas y cavalleros. Intitulado El juego de mandar
+compuesto por don Luis Milán.Dirigido a las damas</title></bibl>
+ 			</sourceDesc>
+ 		</fileDesc>
+		
+	</teiHeader>
+	<text>
+		<body>
+			<head>
+				<title>Av </title>
+			</head>
+			<div>
+		<p>nos avemos de mirar para parescer bien. También con mucha razón hos podemos dezir celestial hermosura, pues ninguna hermosura parece tanto ser venida del cielo como la de las damas y señoras. Que aunque toda hermosura es criada por el criador de todos, en las damas se paresce más aquello que dize: signatum est super nos lumenvultus tui domine. También con mucha razón hos podemos dezir exemplo de crian </p>
+			</div>
+		</body>
+	</text>
+</TEI>

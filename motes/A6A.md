@@ -2,11 +2,11 @@
 layout: prologo
 menu: false
 title: A6A
-title-tei: PRÓLOGO
+title-tei: 
 letter: A
-number: 2
+number: 6
 description: Prólogo A
-permalink: /A2/
+permalink: /A6A/
 prev: A5B
 next: A6B
 ---

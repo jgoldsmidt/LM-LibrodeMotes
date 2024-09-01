@@ -2,7 +2,7 @@
 layout: prologo
 menu: false
 title: A34
-title-tei: PRÓLOGO
+title-tei: 
 letter: A
 number: 3
 description: Prólogo A
