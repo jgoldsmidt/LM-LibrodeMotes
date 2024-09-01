@@ -69,6 +69,10 @@
       c.getHTML5('../tei/{{page.title}}C.xml', function(data){
         document.getElementById("moteCaballero").appendChild(data);
       });
+      c.getHTML5('../tei/{{page.title}}D.xml', function(data){
+        document.getElementById("moteTitle").appendChild(head);
+      });
+
     </script>
     <style>
       /* Estilos minimalistas para el botón */
@@ -142,7 +146,7 @@
           </div>
             <img class="card-img-top" src="/LM-LibrodeMotes/facsimiles/{{page.title}}C.jpg" alt="{{page.title}} Caballero"></img>
             <div class="card-body pt-0">
-            <div class="card-title">//{{page.title}}//</div>
+            <div id="moteTitle" class="card-title">//{{page.title}}//</div>
             <div id="moteCaballero" class="card-text">
             </div>
           </div>
