@@ -6,7 +6,7 @@ title-tei:
 letter: A
 number: 6
 description: Prólogo A
-permalink: /A6b/
+permalink: /A6B/
 prev: A6A
 next: A7A
 ---
