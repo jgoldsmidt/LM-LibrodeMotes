@@ -2,7 +2,7 @@
 layout: prologo
 menu: false
 title: A7B
-title-tei: /AVii/
+title-tei: 
 letter: A
 number: 7
 description: Prólogo A

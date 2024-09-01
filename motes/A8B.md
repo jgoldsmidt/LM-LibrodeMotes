@@ -2,7 +2,7 @@
 layout: prologo
 menu: false
 title: A8B
-title-tei: /Aviii/
+title-tei: 
 letter: A
 number: 8
 description: Prólogo A

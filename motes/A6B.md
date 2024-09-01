@@ -2,7 +2,7 @@
 layout: prologo
 menu: false
 title: A6B
-title-tei: /AVi/
+title-tei: 
 letter: A
 number: 6
 description: Prólogo A

@@ -2,7 +2,7 @@
 layout: prologo
 menu: false
 title: A5B
-title-tei: /Av/ 
+title-tei:  
 letter: A
 number: 5
 description: Prólogo A

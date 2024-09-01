@@ -2,7 +2,7 @@
 layout: prologo
 menu: false
 title: A4B
-title-tei: /Aiiii/ 
+title-tei:  
 letter: A
 number: 4
 description: Prólogo A
