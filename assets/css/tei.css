@@ -5,6 +5,7 @@ tei-p {
   display: block;
   margin-top: .5em;
   margin-bottom: .5em;
+  text-align: center;
 }
 tei-l {
   display: block;
