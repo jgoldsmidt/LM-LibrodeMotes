@@ -172,3 +172,6 @@ main {
     font-style: normal;
   }
   
+  .button-game {
+    max-width: 12%;
+  }
