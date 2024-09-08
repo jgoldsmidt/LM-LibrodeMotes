@@ -10,6 +10,8 @@ answer3: B4
 answer1value: rFalse1
 answer2value: rTrue
 answer3value: rFalse2
+reactionf: "Antes que te cases, mira lo que haces!"
+reactiont: "La fortuna favorece a los audaces!"
 
 ---
 

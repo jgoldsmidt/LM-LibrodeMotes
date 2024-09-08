@@ -163,7 +163,8 @@
 
 function respondeMal ()
 {  document.getElementById("caraDama").src="../assets/img/dama-triste.png";
-   document.getElementById("reaction").textContent="Mal!";
+  document.getElementById("reaction").style="color: red;" ;
+   document.getElementById("reaction").textContent="{{page.reactionf}}";
 }
     rFalse1.addEventListener('click',respondeMal,true);
 
@@ -172,7 +173,8 @@ var rTrue = document.getElementById ('rTrue'),
 
     function respondeBien ()
 {  document.getElementById("caraDama").src="../assets/img/dama-feliz.png";
-document.getElementById("reaction").textContent="Bien";
+document.getElementById("reaction").style="color: green;" ;
+document.getElementById("reaction").textContent="{{page.reactiont}}";
 }
     rTrue.addEventListener('click',respondeBien,true);
 
