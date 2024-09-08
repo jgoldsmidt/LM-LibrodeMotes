@@ -64,7 +64,7 @@ main {
 
 .card .back {
     transform: perspective(600px) rotateX(180deg);
-    background-image: url("../img/naipe.png");
+    background-image: url("../img/naipe-b.png");
     background-size: cover;
     padding: 15px;
     color: #3d3c3c;
