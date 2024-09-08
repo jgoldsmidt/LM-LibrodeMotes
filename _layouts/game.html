@@ -138,7 +138,7 @@
     <div class="dama-game col-5">
       <div class="align-items-start">
           <div class="bubble align-items-center">
-            <p id="reaction">Elige una tarjeta...</p>
+            <p id="reaction" class="crimson-text-semibold">Elige una tarjeta...</p>
             </div>
         <img class="cara-dama" id="caraDama" src="../assets/img/dama-sepia.png" alt="" style="height: 300px;">
         <div class="card" id="dama-a">
@@ -163,7 +163,7 @@
 
 function respondeMal ()
 {  document.getElementById("caraDama").src="../assets/img/dama-triste.png";
-  document.getElementById("reaction").style="color: red;" ;
+  document.getElementById("reaction").style="color: darkred;" ;
    document.getElementById("reaction").textContent="{{page.reactionf}}";
 }
     rFalse1.addEventListener('click',respondeMal,true);
