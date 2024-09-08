@@ -183,6 +183,6 @@ main {
     max-height: 30px;
   }
 
-  .bubble {
+  .card .bubble {
     background: url("../img/dama-feliz.png"); 
   }
