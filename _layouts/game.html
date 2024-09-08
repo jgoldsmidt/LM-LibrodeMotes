@@ -138,7 +138,7 @@
     <div class="dama-game col-5">
       <div class="align-items-start">
           <div class="bubble">
-            <p>hola</p>
+            <p id="reaction">hola</p>
             </div>
         <img class="cara-dama" id="caraDama" src="../assets/img/dama-sepia.png" alt="" style="height: 300px;">
         <div class="card" id="dama-a">
@@ -163,6 +163,7 @@
 
 function respondeMal ()
 {  document.getElementById("caraDama").src="../assets/img/dama-triste.png";
+   document.getElementById("reaction").textContent="Mal!";
 }
     rFalse1.addEventListener('click',respondeMal,true);
 
@@ -171,6 +172,7 @@ var rTrue = document.getElementById ('rTrue'),
 
     function respondeBien ()
 {  document.getElementById("caraDama").src="../assets/img/dama-feliz.png";
+document.getElementById("reaction").textContent="Bien";
 }
     rTrue.addEventListener('click',respondeBien,true);
 
