@@ -80,11 +80,10 @@ main {
 .bubble {
     position: relative;
     width: 270px;
-    height: 190px;
-    margin: 20px;
+    height: 400px;
+    margin: 3px;
     margin-top: 0px;
-    transform: perspective(600px) rotateX(180deg);
-    background-image: url("../img/naipe-b.png");
+    background: url("../img/bubble.png");
     background-color: rgb(192, 179, 162);
     background-size: cover;
     padding: 15px;
@@ -200,8 +199,4 @@ main {
 
   .button-game > img {
     max-height: 30px;
-  }
-
-  .card .bubble {
-    background: url("../img/bubble.png"); 
   }
