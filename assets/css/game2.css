@@ -175,3 +175,7 @@ main {
   .button-game {
     max-width: 4%;
   }
+
+  .button-game > img {
+    max-height: 30px;
+  }
