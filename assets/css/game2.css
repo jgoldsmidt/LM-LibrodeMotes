@@ -181,3 +181,7 @@ main {
   .button-game > img {
     max-height: 30px;
   }
+
+  .bubble{
+    background-image: url("../assets/img/bubble.png");
+  }
