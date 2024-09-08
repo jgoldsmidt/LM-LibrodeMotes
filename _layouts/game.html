@@ -138,7 +138,7 @@
     <div class="dama-game col-5">
       <div class="align-items-start">
         <img class="cara-dama" id="caraDama" src="../assets/img/dama-sepia.png" alt="" style="height: 300px;">
-        <div class="card">
+        <div class="card" id="dama-a">
           <div class="face front">
             <img src="../assets/img/naipe h.png" alt="">
         </div>
@@ -175,6 +175,17 @@ var rTrue = document.getElementById ('rTrue'),
     caradama = document.getElementById ('caraDama');
 
     rFalse2.addEventListener('click',respondeMal,true);
+  </script>
+  <script>
+    window.addEventListener('load', function() {
+  setTimeout(function() {
+    const damaFront = document.querySelector('#dama-a .front');
+    const damaBack = document.querySelector('#dama-a .back');
+    
+    damaFront.style.transform = 'perspective(600px) rotateX(180deg)';
+    damaBack.style.transform = 'perspective(600px) rotateX(360deg)';
+  }, 3000); // 3000ms = 3 segundos
+});
   </script>
 </body>
 </html>
