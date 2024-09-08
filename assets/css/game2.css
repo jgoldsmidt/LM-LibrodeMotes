@@ -193,3 +193,7 @@ main {
   .button-game > img {
     max-height: 30px;
   }
+
+  .title > img {
+    max-height: 55px;
+  }
