@@ -77,6 +77,25 @@ main {
     cursor: pointer;
 }
 
+.bubble {
+    position: relative;
+    width: 270px;
+    height: 190px;
+    margin: 20px;
+    margin-top: 0px;
+    transform: perspective(600px) rotateX(180deg);
+    background-image: url("../img/naipe-b.png");
+    background-color: rgb(192, 179, 162);
+    background-size: cover;
+    padding: 15px;
+    color: #3d3c3c;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+    cursor: pointer;
+}
+
 .card .back .link {
     border-top: solid 1px #f3f3f3;
 }
