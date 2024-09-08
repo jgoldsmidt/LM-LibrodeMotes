@@ -184,5 +184,5 @@ main {
   }
 
   .bubble {
-    background-image: url("../img/bubble.png");
+    background: url("../img/dama-feliz.png"); 
   }
