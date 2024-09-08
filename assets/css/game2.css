@@ -80,19 +80,16 @@ main {
 .bubble {
     position: relative;
     width: 270px;
-    height: 400px;
+    height: 200px;
     margin: 3px;
     margin-top: 0px;
     background: url("../img/bubble.png");
-    background-color: rgb(192, 179, 162);
-    background-size: cover;
+    background-size:contain;
     padding: 15px;
     color: #3d3c3c;
     display: flex;
     justify-content: space-between;
     text-align: center;
-    box-shadow: 0 5px 10px #000;
-    cursor: pointer;
 }
 
 .card .back .link {
