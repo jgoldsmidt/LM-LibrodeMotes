@@ -195,5 +195,7 @@ main {
   }
 
   .title > img {
-    max-height: 55px;
+    max-height: 45px;
+    margin: 5px;
+    margin-left: 25px;
   }
