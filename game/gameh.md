@@ -1,5 +1,5 @@
 ---
-layout: game-home
+layout: gameh
 title: GameHome
 permalink: /gameh/
 ---
