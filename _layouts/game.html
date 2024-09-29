@@ -184,6 +184,7 @@ var rTrue = document.getElementById ('rTrue'),
 {  document.getElementById("caraDama").src="../assets/img/dama-feliz.png";
 document.getElementById("reaction").style="color: green;" ;
 document.getElementById("reaction").textContent="{{page.reactiont}}";
+document.getElementById("arrowGame").classList.add('arrow-loaded');
 }
     rTrue.addEventListener('click',respondeBien,true);
 
@@ -202,12 +203,6 @@ document.getElementById("reaction").textContent="{{page.reactiont}}";
     damaBack.style.transform = 'perspective(600px) rotateX(360deg)';
   }, 1000); // 1000ms = 1 segundo
 });
-  </script>
-   <script>
-    window.addEventListener('load', function() {
-      // Cuando la página termine de cargar, agrega la clase 'loaded' al body
-      document.body.classList.add('loaded');
-    });
   </script>
 </body>
 </html>
