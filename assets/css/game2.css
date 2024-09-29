@@ -199,3 +199,54 @@ main {
     margin: 5px;
     margin-left: 25px;
   }
+
+  .home-game {
+    text-align: center;
+    padding-top: 9vh;
+  }
+
+  /* Estilos para los botones */
+.custom-btn {
+    font-family: 'Medieval Sharp', serif;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 30px;
+    color: #323030;
+    background-color: #a09680; /* Un púrpura real para un estilo medieval */
+    border: 3px solid #383736; /* Un borde oscuro para contraste */
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .custom-btn:hover {
+    background-color: #2b2018; /* Un tono más oscuro al hacer hover */
+    color: #e4e4e4; /* Color dorado suave para resaltar al hacer hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px); /* Un pequeño efecto de elevación */
+  }
+  
+  .custom-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(72, 61, 139, 0.3); /* Resalta el botón cuando esté enfocado */
+  }
+  
+
+  
+  /* Media queries para responsividad */
+  @media (max-width: 768px) {
+    .custom-btn {
+      font-size: 16px;
+      padding: 8px 25px;
+    }
+  }
+
+  .fade-in {
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+  }
+  
+  /* Cuando se cargue la página, esta clase se aplicará */
+  .loaded .fade-in {
+    opacity: 1;
+  }

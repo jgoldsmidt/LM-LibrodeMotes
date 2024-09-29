@@ -84,7 +84,7 @@
 <body>
   <main>
     <div class="container-fluid">
-    <div class="bar-game row justify-content-between">
+    <div class="bar-game row justify-content-between fade-in">
       <div class="col-5">
       <img class="title" src="../assets/img/JDM.png" alt="title" style="max-height: 30px;">
       </div>
@@ -201,6 +201,12 @@ document.getElementById("reaction").textContent="{{page.reactiont}}";
     damaBack.style.transform = 'perspective(600px) rotateX(360deg)';
   }, 1000); // 1000ms = 1 segundo
 });
+  </script>
+   <script>
+    window.addEventListener('load', function() {
+      // Cuando la página termine de cargar, agrega la clase 'loaded' al body
+      document.body.classList.add('loaded');
+    });
   </script>
 </body>
 </html>
