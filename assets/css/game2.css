@@ -250,3 +250,7 @@ main {
   .loaded .fade-in {
     opacity: 1;
   }
+
+  .arrow-loaded .fade-in {
+    opacity: 1;
+  }

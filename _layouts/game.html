@@ -154,7 +154,7 @@
         </div>
       </div>
     </div>
-    <div class=" col-1" id="arrowGame">
+    <div class=" col-1 fade-in" id="arrowGame">
       <button class="btn"><a href="..{{page.next}}"><img style="
         width: 100px;
         height: 90px;" src="../assets/img/arrow-game.png" alt="next"></a></button>
@@ -173,7 +173,7 @@ function respondeMal ()
 {  document.getElementById("caraDama").src="../assets/img/dama-triste.png";
   document.getElementById("reaction").style="color: darkred;" ;
    document.getElementById("reaction").textContent="{{page.reactionf}}";
-   document.getElementById("arrowGame").style="box-shadow: 0 4px 8px rgba(192, 179, 162, 0.1)";
+   document.getElementById("arrowGame").classList.add('arrow-loaded');
 }
     rFalse1.addEventListener('click',respondeMal,true);
 
