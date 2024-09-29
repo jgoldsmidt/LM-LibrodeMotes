@@ -2,7 +2,7 @@
 layout: game
 title: Game 9
 permalink: /game9/
-next: /game1/
+next: /game10/
 question: B3
 answer1: B2
 answer2: B3
