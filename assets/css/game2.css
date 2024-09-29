@@ -243,6 +243,7 @@ main {
 
   .fade-in {
     opacity: 0;
+    transition: opacity 1.5s ease-in-out;
   }
   
   /* Cuando se cargue la página, esta clase se aplicará */
@@ -250,7 +251,10 @@ main {
     opacity: 1;
   }
 
-  .arrow-loaded .fade-in {
-    opacity: 1;
+  .fade-in-arrow {
+    opacity: 0;
     transition: opacity 1.5s ease-in-out;
+  }
+  .arrow-loaded .fade-in-arrow {
+    opacity: 1;
   }
