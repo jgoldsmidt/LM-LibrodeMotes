@@ -173,7 +173,7 @@ function respondeMal ()
 {  document.getElementById("caraDama").src="../assets/img/dama-triste.png";
   document.getElementById("reaction").style="color: darkred;" ;
    document.getElementById("reaction").textContent="{{page.reactionf}}";
-   document.getElementById("arrowGame").classList.add('arrow-loaded');
+   document.getElementById("arrowGame").style.opacity =1;
 }
     rFalse1.addEventListener('click',respondeMal,true);
 

@@ -255,6 +255,3 @@ main {
     opacity: 0;
     transition: opacity 1.5s ease-in-out;
   }
-  .arrow-loaded .fade-in-arrow {
-    opacity: 1;
-  }
