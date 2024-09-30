@@ -79,6 +79,9 @@
       c.getHTML5('../tei/{{page.answer3}}C.xml', function(data){
         document.getElementById("answer3").appendChild(data);
       });
+      c.getHTML5('../tei/{{page.answer4}}C.xml', function(data){
+        document.getElementById("answer4").appendChild(data);
+      });
     </script>
   </head>
 <body>
@@ -131,8 +134,8 @@
             <div class="face front">
                 <img src="../assets/img/naipe h.png" alt="">
             </div>
-            <div id="{{page.answer2value}}" class="face back">
-                <p id="answer2">
+            <div id="{{page.answer4value}}" class="face back">
+                <p id="answer4">
                 </p>
             </div>
           </div>
@@ -192,7 +195,11 @@ document.getElementById("arrowGame").style.opacity =1;
     var rFalse2 = document.getElementById ('rFalse2'),
     caradama = document.getElementById ('caraDama');
 
-    rFalse2.addEventListener('click',respondeMal,true);
+    rFalse3.addEventListener('click',respondeMal,true);
+    var rFalse3 = document.getElementById ('rFalse3'),
+    caradama = document.getElementById ('caraDama');
+
+    rFalse3.addEventListener('click',respondeMal,true);
   </script>
   <script>
     window.addEventListener('load', function() {
