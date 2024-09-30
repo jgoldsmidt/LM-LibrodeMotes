@@ -12,6 +12,7 @@ answer1value: rFalse1
 answer2value: rTrue
 answer3value: rFalse2
 answer4value: rFalse3
-
+reactionf: "¡Fuego malo te queme!"
+reactiont: "¡Todo te viene tal como quieres!"
 ---
 

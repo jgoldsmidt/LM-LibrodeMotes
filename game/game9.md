@@ -10,8 +10,10 @@ answer3: N8
 answer4: J2
 answer1value: rFalse1
 answer2value: rFalse2
-answer3value: rFalse2
+answer3value: rFalse3
 answer4value: rTrue
+reactionf: "¡Mala landre te mate!"
+reactiont: " Llegar y besar, ¡suerte es singular!"
 
 ---
 

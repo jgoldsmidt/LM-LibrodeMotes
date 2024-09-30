@@ -12,7 +12,8 @@ answer1value: rFalse1
 answer2value: rFalse2
 answer3value: rTrue
 answer4value: rFalse3
-
+reactionf: "¡Desdichado de vos!"
+reactiont: "¡La suerte es loca y a cualquiera le toca!"
 
 ---
 

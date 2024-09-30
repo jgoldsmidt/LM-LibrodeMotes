@@ -11,7 +11,9 @@ answer4: M2
 answer1value: rTrue
 answer2value: rFalse1
 answer3value: rFalse2
-answer4value: rFalse2
+answer4value: rFalse3
+reactionf: "¡Desdichado de vos!"
+reactiont: "¡La suerte es loca y a cualquiera le toca!"
 
 ---
 

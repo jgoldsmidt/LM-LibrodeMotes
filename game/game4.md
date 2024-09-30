@@ -12,6 +12,8 @@ answer1value: rFalse1
 answer2value: rFalse3
 answer3value: rFalse2
 answer4value: rTrue
+reactionf: "¡Mala landre te mate!"
+reactiont: " Llegar y besar, ¡suerte es singular!"
 
 ---
 

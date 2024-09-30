@@ -12,6 +12,8 @@ answer1value: rFalse1
 answer2value: rFalse3
 answer3value: rFalse2
 answer4value: rTrue
+reactionf: "¡Pecas más de bellaco que de bobo!"
+reactiont: "¡Buena ventura!"
 
 ---
 
