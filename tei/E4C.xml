@@ -31,12 +31,14 @@ compuesto por don Luis Milán.Dirigido a las damas</title></bibl>
 			<head>
 				<title>/Bvii/</title>
 			</head>
-			<lg n="2" type="poema" corresp="caballero" met="4x7" rhyme="abba" >
-				<l n="1">Nunca me veré perdido </l>
-				<l n="2">ni mi page perdedor, </l>
-				<l n="3">pues que yo soy en amor</l>
-				<l n="3">vencedor de bien vencido.</l>
-			</lg> 
+			<lg n="1" type="poema" corresp="dama" met="3x7" rhyme="abb" >
+				<l n="1">Isabel </l> 
+				<l n="2">tiene el nombre de Abel </l>
+				<l n="3">y las obras de Caín:</l>
+				<l n="4">dos contrarios en un fin, </l>
+				<l n="5">matadora, no cruel.</l>
+				
+			</lg>
 
 			
 

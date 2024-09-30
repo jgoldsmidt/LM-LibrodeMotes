@@ -31,19 +31,14 @@ compuesto por don Luis Milán.Dirigido a las damas</title></bibl>
 			<head>
 				<title>/Bvii/</title>
 			</head>
-			<lg n="2" type="poema" corresp="caballero" met="4x7" rhyme="abba" >
-				<l n="1">Nunca me veré perdido </l>
-				<l n="2">ni mi page perdedor, </l>
-				<l n="3">pues que yo soy en amor</l>
-				<l n="3">vencedor de bien vencido.</l>
-			</lg> 
+			<lg n="1" type="poema" corresp="dama" met="3x7" rhyme="abb" >
+				<l n="1">Francisca:</l> 
+				<l n="2">quien os ama bien s’arrisca, </l>
+				<l n="3">que si muere por tal dama </l>
+				<l n="4">siempre bivirá su fama.</l>
+				
 
-			
-
-
-
-
-
+			</lg>
  
 
 		</body>

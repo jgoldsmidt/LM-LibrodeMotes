@@ -32,8 +32,12 @@ compuesto por don Luis Milán.Dirigido a las damas</title></bibl>
 				<title>/Bvii/</title>
 			</head>
 			<div>
-			<p>[Falta la parte del caballero]
-			</p>
+			<lg n="1" type="poema" corresp="caballero" met="3x7" rhyme="abb" >
+				<l n="1">Con las burlas que dezís,  </l> 
+				<l n="2">del mal que me hacéis </l>
+				<l n="3">más sospiros sacaréis que </l>
+				<l n="4">más sospiros los que vos me pedís. </l>
+			</lg>
 			</div>
 			
 
