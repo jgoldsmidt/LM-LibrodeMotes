@@ -3,13 +3,15 @@ layout: game
 title: Game6
 permalink: /game6/
 next: /game7/
-question: B3
-answer1: B2
-answer2: B3
-answer3: B4
+question: G6
+answer1: K2
+answer2: K1
+answer3: G6
+answer4: G7
 answer1value: rFalse1
-answer2value: rTrue
-answer3value: rFalse2
+answer2value: rFalse2
+answer3value: rTrue
+answer4value: rFalse3
 
 ---
 
