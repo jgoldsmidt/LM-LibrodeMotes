@@ -31,11 +31,21 @@ compuesto por don Luis Milán.Dirigido a las damas</title></bibl>
 			<head>
 				<title>/Bvii/</title>
 			</head>
-			<lg n="1" type="poema" corresp="dama" met="3x7" rhyme="abb" >
-				<l n="1">Dezilde, si es aquí, </l> 
-				<l n="2">a la linda Castellana:</l>
-				<l n="3">vos sois la estrella Diana.</l>
-			</lg>
+			<lg n="2" type="poema" corresp="caballero" met="4x7" rhyme="abba" >
+				<l n="1">Estephanía:</l>
+				<l n="2">venado mata porfía,    </l>
+				<l n="3">que no porfía venado, </l>
+				<l n="4">pues en vos está provado. </l>
+			</lg> 
+
+			
+
+
+
+
+
+ 
+
 		</body>
 	</text>
 </TEI>

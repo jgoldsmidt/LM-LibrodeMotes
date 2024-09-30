@@ -31,11 +31,20 @@ compuesto por don Luis Milán.Dirigido a las damas</title></bibl>
 			<head>
 				<title>/Bvii/</title>
 			</head>
-			<lg n="1" type="poema" corresp="dama" met="3x7" rhyme="abb" >
-				<l n="1">Dezilde, si es aquí, </l> 
-				<l n="2">a la linda Castellana:</l>
-				<l n="3">vos sois la estrella Diana.</l>
-			</lg>
+			<lg n="2" type="poema" corresp="caballero" met="4x7" rhyme="abba" >
+				<l n="1">Ya d’aquí veo el cielo </l>
+				<l n="2">y aquella que verme hazía   </l>
+				<l n="3">estrellas a mediodía. </l>
+			</lg> 
+
+			
+
+
+
+
+
+ 
+
 		</body>
 	</text>
 </TEI>
